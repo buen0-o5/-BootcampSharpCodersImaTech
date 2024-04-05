@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Vetor -->
+    <script>
+        let cidades = [
+            'Sao Paulo',
+            'Rio de Janeiro',
+            'Minas Gerais',
+            'Paraiba'
+        ];
+
+        window.onload = function(){
+            let list = document.querySelector('.lista');
+
+            for (let i = 0; i < cidades.length; i++) {
+                // Criar o elemento li
+                let item = document.createElement('li');
+                
+                // Adicionar texto no elemento
+                item.innerText = cidades[i];
+
+                // Adicionar elemento li na lista
+                list.appendChild(item);
+            }
+            
+            let minhaDiv = document.querySelector('.minhaDiv');
+
+            let texto = document.createElement('p');
+            let textoConteudo = document.createTextNode('Hello World');
+            
+            // Adicionar nó de texto ao parágrafo
+            texto.appendChild(textoConteudo);
+            
+            // Adicionar parágrafo à div
+            minhaDiv.appendChild(texto);
+        }
+    </script>
+</head>
+<body>
+    <ul class="lista"></ul>
+    <div class="minhaDiv"></div>
+</body>
+</html>

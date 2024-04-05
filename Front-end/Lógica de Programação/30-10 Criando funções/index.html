@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <fieldset>
+        <div class="form1">
+          <form action="#" onsubmit=" enviar(this)">
+            <input type="text" placeholder="Informe seu nome" />
+            <br />
+            <input type="number" placeholder="Informe seu nome" />
+            <br />
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+       
+        <div class="ca">
+          <!-- Tag select - Caixa de com -->
+          <select onchange="linguagem(this.value)">
+            <option value="0">Escolha uma linguagem</option>
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">JavaScript</option>
+          </select>
+             <!-- Tag de botão -->
+          <button onclick="mensagem()">Clique aqui</button>
+        </div>
+
+      </fieldset>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

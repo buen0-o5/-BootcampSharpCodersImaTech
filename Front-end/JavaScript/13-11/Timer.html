@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <style>
+        /* Estilo opcional para o relógio */
+        #relogio {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            // Função para obter a hora atual e atualizar o relógio
+            function atualizarRelogio() {
+                let dataAtual = new Date();
+                
+                let horas = dataAtual.getHours();
+                let minutos = dataAtual.getMinutes();
+                let segundos = dataAtual.getSeconds();
+
+                // Formatar a hora
+                horas = horas < 10 ? '0' + horas : horas;
+                minutos = minutos < 10 ? '0' + minutos : minutos;
+                segundos = segundos < 10 ? '0' + segundos : segundos;
+
+                // Atualizar o conteúdo do elemento com o ID "relogio"
+                document.getElementById('relogio').innerText = `${horas}:${minutos}:${segundos}`;
+            }
+
+            // Chamar a função a cada segundo (1000 milissegundos)
+            setInterval(atualizarRelogio, 1000);
+        };
+    </script>
+</head>
+<body>
+    <h1>Relógio</h1>
+    
+    <!-- Elemento para exibir o relógio -->
+    <div id="relogio"></div>
+</body>
+</html>

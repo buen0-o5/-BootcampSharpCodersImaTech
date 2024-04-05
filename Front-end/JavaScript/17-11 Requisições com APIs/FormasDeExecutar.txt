@@ -1,0 +1,5 @@
+json-server --watch cliente db.json
+
+json-server cliente db.json
+
+npx json-server cliente.json

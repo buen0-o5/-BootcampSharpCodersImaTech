@@ -1,0 +1,37 @@
+<p>componente02 works!</p>
+<p>Diretivas</p>
+<!-- 
+    PROPERTY BIND(troca de informaçoes entre os arquivos html e ts)
+    () -> HTML chama uma funçao/variavel no arquivo TS
+    [] -> TS e envia para o arquivo HTML
+    [()] -> 
+ -->
+
+<!-- IF -->
+<button (click)="visibilidadeTexto()">Clique aqui</button>
+<p *ngIf="exibirTexto">Aprendendo a trabalhar com o ngIf</p>
+
+<!-- Templete -->
+<ng-template [ngIf]="exibirTexto">
+    <p>Texto dentro do Templete...</p>
+</ng-template>
+
+<!-- FOR -->
+<ul *ngFor="let nome of nomes; index as i">
+    <li>{{i}} - {{nome}}</li>
+</ul>
+
+
+<select [(ngModel)]="linguagens">
+    <option value="">Selecione alguma linguagem</option>
+    <option value="C#">C#</option>
+    <option value="Java">Java</option>
+    <option value="Pyton">Pyton</option>
+</select>
+<!-- Switch -->
+<ul [ngSwitch]="linguagens">
+    <li *ngSwitchCase="'C#'">C# e uma linguagem desenvolvida pela Microsoft</li>
+    <li *ngSwitchCase="'Java'">Java e uma linguagem que pertece a Oracle</li>
+    <li *ngSwitchCase="'Pyton'">Pyton</li>
+    <li *ngSwitchDefault>Informe uma linguahem</li>
+</ul>

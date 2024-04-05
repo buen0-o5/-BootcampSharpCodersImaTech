@@ -1,0 +1,7 @@
+Criar uma estrutura json-server
+
+a) npm i json-server 
+
+Executar
+
+a) npx json-server alunos.json

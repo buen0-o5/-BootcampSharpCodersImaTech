@@ -1,0 +1,28 @@
+{
+  "alunos": [
+    {
+      "id": 1,
+      "nome": "Pitty",
+      "nota1": 8,
+      "nota2": 9
+    },
+    {
+      "id": 2,
+      "nome": "Scooby",
+      "nota1": 8,
+      "nota2": 9
+    },
+    {
+      "id": 3,
+      "nome": "Bolinho de noiva",
+      "nota1": 8,
+      "nota2": 9
+    },
+    {
+      "nome": "Algodao",
+      "nota1": 10,
+      "nota2": 10,
+      "id": 4
+    }
+  ]
+}

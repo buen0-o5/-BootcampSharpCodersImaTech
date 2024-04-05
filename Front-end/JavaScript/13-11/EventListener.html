@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Vetor -->
+    <script>
+        window.onload = function(){
+          
+            let botao = document.createElement('button');
+            botao.innerText = 'Clique aqui'
+            botao.value = 'Informaçao secreta'
+
+            //Adicionar o evento EventListener
+            botao.addEventListener('click', ()=>{alert('Hello World"');});
+            
+            //Adiconar o botao na pagina
+            document.getElementsByTagName('body')[0].appendChild(botao);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

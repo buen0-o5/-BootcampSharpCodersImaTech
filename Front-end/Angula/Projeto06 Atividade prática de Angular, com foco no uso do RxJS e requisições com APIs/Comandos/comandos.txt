@@ -1,0 +1,8 @@
+1-Criar componentes
+    ng g c componentes/aluno
+
+2-Criar serviço de aluno
+    ng g s servicos/aluno 
+
+3-Executar projeto
+    ng s

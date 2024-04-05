@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funçoes assincronas</title>
+</head>
+<body>
+<script>
+    //Funçao mesangem 1
+    function mensagem1(){
+        return new Promise((retorno)=> {
+            setTimeout(() => {
+                retorno('Primeira mensagem');
+            }, 1000);
+        });
+    }
+    //Funçao mesangem 2 rxjs
+
+    function mensagem2(){
+        return 'Segunda mensagem';
+    }
+
+    //Funçao para executar as mensagens
+   async function executarmensagens(){
+        //Obter o retorno das mensagens
+        let r1 = await mensagem1();
+        let r2 = mensagem2();
+
+        console.log(r1);
+        console.log(r2);
+    }
+executarmensagens();
+</script>
+</body>
+</html>

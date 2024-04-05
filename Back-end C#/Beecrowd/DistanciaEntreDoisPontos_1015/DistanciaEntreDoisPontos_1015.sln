@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanciaEntreDoisPontos_1015", "DistanciaEntreDoisPontos_1015\DistanciaEntreDoisPontos_1015.csproj", "{8DFF3EB4-87AE-4B37-AAAE-AD9AE085E835}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DFF3EB4-87AE-4B37-AAAE-AD9AE085E835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DFF3EB4-87AE-4B37-AAAE-AD9AE085E835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DFF3EB4-87AE-4B37-AAAE-AD9AE085E835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DFF3EB4-87AE-4B37-AAAE-AD9AE085E835}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {594490BE-9619-4F5F-83B0-C7E9AC2E8C1E}
+	EndGlobalSection
+EndGlobal

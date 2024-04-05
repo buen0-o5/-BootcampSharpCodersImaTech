@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Vetor -->
+    <script>
+        let nomes = [
+            {'nome': 'Aline', 'idade': 28},
+            {'nome': 'Bruno', 'idade': 33},
+            {'nome': 'Carla', 'idade': 40},
+            {'nome': 'Daniel', 'idade': 15},
+            {'nome': 'Ellen', 'idade': 17}
+        ];
+
+        // Map
+        nomes.map(obj => document.write(obj.idade + '<hr>'));
+
+        // Filter
+        let nomesContendoA = nomes.filter(nome => nome.nome.toLowerCase().startsWith('a'));
+
+        // Exibindo os resultados do filter
+        nomesContendoA.map(obj => document.write(obj.nome + ': ' + obj.idade + '<hr>'));
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,135 @@
+.box{
+    width:300px ;
+    height: 300px;
+    background-color: blue;
+    border: 5px solid black;
+    padding: 10px;
+    box-sizing: border-box; /*width+ padding+ border  */
+}
+
+main{
+    width:600px ;
+    height: 400px;
+    background-color: gray;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    align-items: end; /*centralizar*/
+}
+/* div{
+    width:100px ;
+    height: 100px;
+    background-color: green;
+    font-size: 90px;
+    color: white;
+} */
+/* **************** */
+/* Pequena */
+/* @media screen and (max-width:600px) {
+    body{
+        background-color: yellow;
+    }
+    h1::after{
+        content:" Pequena";
+    }
+} */
+/* Meida */
+/* @media screen and (min-width:601px) and (max-width:1000px) {
+    body{
+        background-color: green;
+    }
+    h1::after{
+        content:" Medio";
+    }
+} */
+
+
+/* Grande*/
+/* @media screen and (min-width:1001px) {
+    body{
+        background-color: lightcoral;
+    }
+    h1::after{
+        content:" Grande";
+    }
+} */
+
+/* **************** */
+/* Padronizar as classes .col
+[class*="col-"]{
+    border: 1px solid black;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+Tamanhos de cada coluna
+.col-1{width: 8.33%;}
+.col-2{width: 16.33%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;} */
+
+/* **************** */
+
+
+[class*="col-"]{
+    border: 1px solid black;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:600px){
+
+.col-p-1{width: 8.33%;}
+.col-p-2{width: 16.33%;}
+.col-p-3{width: 25%;}
+.col-p-4{width: 33.33%;}
+.col-p-5{width: 41.66%;}
+.col-p-6{width: 50%;}
+.col-p-7{width: 58.33%;}
+.col-p-8{width: 66.66%;}
+.col-p-9{width: 75%;}
+.col-p-10{width: 83.33%;}
+.col-p-11{width: 91.66%;}
+.col-p-12{width: 100%;}
+}
+@media screen and (min-width:601px) and (max-width:1000px){
+
+    .col-m-1{width: 8.33%;}
+    .col-m-2{width: 16.33%;}
+    .col-m-3{width: 25%;}
+    .col-m-4{width: 33.33%;}
+    .col-m-5{width: 41.66%;}
+    .col-m-6{width: 50%;}
+    .col-m-7{width: 58.33%;}
+    .col-m-8{width: 66.66%;}
+    .col-m-9{width: 75%;}
+    .col-m-10{width: 83.33%;}
+    .col-m-11{width: 91.66%;}
+    .col-m-12{width: 100%;}
+    }
+    @media screen and (max-width:1001px){
+
+        .col-g-1{width: 8.33%;}
+        .col-g-2{width: 16.33%;}
+        .col-g-3{width: 25%;}
+        .col-g-4{width: 33.33%;}
+        .col-g-5{width: 41.66%;}
+        .col-g-6{width: 50%;}
+        .col-g-7{width: 58.33%;}
+        .col-g-8{width: 66.66%;}
+        .col-g-9{width: 75%;}
+        .col-g-10{width: 83.33%;}
+        .col-g-11{width: 91.66%;}
+        .col-g-12{width: 100%;}
+        }
+        

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Get
+        // fetch('http://localhost:3000/Clientes')
+        // .then(requisicao => requisicao.json())
+        // .then(Clientes => console.table(Clientes))
+
+        //Post
+        // fetch('http://localhost:3000/Clientes' , 
+        // {
+        //     method: 'POST',
+        //     body: JSON.stringify({'nome':'Aline', 'idade':32}),
+        //     headers: {'Content-Type':'application/json'}
+        // })
+        //     .then(requisicao => requisicao.json())
+        //     .then(cliente => console.log(cliente));
+
+        //PUT
+        // fetch('http://localhost:3000/Clientes/1' , 
+        // {
+        //     method: 'PUT',
+        //     body: JSON.stringify({'nome':'Pitty Aniceto Bueno', 'idade':32}),
+        //     headers: {'Content-Type':'application/json'}
+        // })
+        //     .then(requisicao => requisicao.json())
+        //     .then(cliente => console.log(cliente));
+
+
+        //DELETE
+        fetch('http://localhost:3000/Clientes/d6df' , 
+        {
+            method: 'DELETE',
+            headers: {'Content-Type':'application/json'}
+        })
+            .then(requisicao => requisicao.json())
+            .then(cliente => console.log(cliente))
+            .catch(erro => console.log(`Erro apresentado:  ${erro}`))
+            .finally(() => console.log('Requisiçao finalizada'));
+        
+</script>
+</head>
+<body>
+
+</body>
+</html>

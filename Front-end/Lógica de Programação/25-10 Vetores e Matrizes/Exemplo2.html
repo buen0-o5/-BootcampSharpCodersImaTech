@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //vetor
+      let nomes = ["Aline", "Bruno", "Carlos", "Diane", "Elaine"];
+
+      //obter nome
+      let obterNome = prompt("Informe um nome");
+
+      //Variavel para verificar se existe o nome
+      let existe = false;
+
+      //verificar se o nome existe
+      for (let i = 0; i < nomes.length; i++) {
+        if (obterNome == nomes[i]) {
+          existe = true;
+        }
+      }
+
+      if (existe) {
+        alert("O nome existe no vetor!");
+      } else {
+        alerte("O nome  não existe no vetor!");
+      }
+
+      for(let i =0; i < nomes.length; i++){
+        document.write(nomes[i]+"<br>");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
